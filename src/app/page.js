@@ -113,7 +113,7 @@ export default function Home() {
               key={item.id}
               label={item.name}
               greyText={"Artist"}
-              coverSrc="https://d3ozihag9834pq.cloudfront.net/image/music.png"
+              coverSrc={item.albums[0].cover}
               onClick={() => router.push(`/artist/${item.id}`)}
             />
           ))}
